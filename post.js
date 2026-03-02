@@ -49,3 +49,6 @@ const displayPost = (posts) => {
 
   });
 };
+
+
+loadPost();
