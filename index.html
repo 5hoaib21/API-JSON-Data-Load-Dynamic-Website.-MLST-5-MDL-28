@@ -1,17 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Json data collect</title>
-</head>
-<body>
-  <button onclick="loadData()">Load Data</button>
-  <button onclick="loadPost()">Load Post</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Json data collect</title>
 
-<ol id="post-container"></ol>
+    <style>
+      #post-container {
+          max-width: 1160px;
+          margin: 50px auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 20px;
+          row-gap: 30px;
+      }
+      .post-card{
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgb(128, 128, 128,50);
+        height: 100%;
 
-  <!-- <script src="./script.js"></script> -->
-  <script src="./post.js"></script>
-</body>
+      }
+      .post-card p{
+        text-align: justify;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button onclick="loadData()">Load Data</button>
+    <button onclick="loadPost()">Load Post</button>
+
+    <!-- <ol id="post-container"></ol> -->
+    <div id="post-container">
+      
+    </div>
+
+    <!-- <script src="./script.js"></script> -->
+    <script src="./post.js"></script>
+  </body>
 </html>
